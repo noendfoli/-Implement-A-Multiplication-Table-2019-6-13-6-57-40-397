@@ -6,8 +6,9 @@
                var numberResult = vaildNumber(startNumber,endNumber);               
                 if(numberResult){                    
                     makeMultipletaionTable(startNumber,endNumber);
-
-                }    
+                }else{
+                    return null;
+                }
            }
          function vaildNumber(startNumber,endNumber){                
                     if(startNumber > 1000 | startNumber < 1 | endNumber > 1000 | endNumber < 1 | startNumber> endNumber){   
