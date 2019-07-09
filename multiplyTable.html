@@ -1,0 +1,33 @@
+<html>    
+    <head>       
+         <script> 
+          
+          function createMultipletaionTable(startNumber,endNumber){               
+               var numberResult = vaildNumber(startNumber,endNumber);               
+                if(numberResult){                    
+                    makeMultipletaionTable(startNumber,endNumber);
+
+                }    
+           }
+         function vaildNumber(startNumber,endNumber){                
+                    if(startNumber > 1000 | startNumber < 1 | endNumber > 1000 | endNumber < 1 | startNumber> endNumber){   
+                          return false;               
+                     }               
+                      return true;          
+            }           
+            function outPutMultipletaionTable(startNumber,endNumber){              
+                  for(var i = startNumber;i < endNumber ;i++){                   
+                      printMultipletaionTable(startNumber,i);  
+                   }           
+             }            
+            function printMultipletaionTable(startNumber,endNumber){
+                for(let j = startNumber; j < endNumber; j++ ){
+                    console.log(j+"X"+endNumber+"="+j*endNumber);
+                }
+
+            }       
+         </script>   
+    </head>   
+    <body>
+    </body>
+</html>
